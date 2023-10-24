@@ -80,10 +80,16 @@ nav li:hover {
   margin: 0;
   margin-bottom: 1em;
   color: #000000;
+  text-decoration: black;
 }
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
 
 .article:hover h3{
   text-decoration: underline;
+  color: rgb(204, 255, 0);
 }
 
 .article p{
@@ -106,6 +112,36 @@ nav li:hover {
   justify-content: space-evenly;
   width: 100%;
   /* align-content: center; */
+}
+
+.single-article-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  width:100vw;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px #000000;
+}
+
+.single-article-header img {
+  display: none;
+}
+
+
+.single-article-main{
+  font-size: 1.2rem;
+  padding: 2em;
+}
+
+.single-article-main h4{
+  color:#979797;
 }
 
 @media screen and (max-width: 768px) {
