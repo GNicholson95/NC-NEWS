@@ -7,6 +7,7 @@ const Articles = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        setIsLoading(true); //important! it makes the code wait for the items to load
         fetchAllArticles()
           .then((articles) => {
             setIsLoading(false);
@@ -20,7 +21,7 @@ const Articles = () => {
       if (isLoading) {
         return <p>loading...</p>;
       }
-
+      
     return (
        <>
         <h2 className = 'header-2'>Articles</h2>
