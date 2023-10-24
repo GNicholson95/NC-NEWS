@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchAllArticles } from "../../api";
 import Article from "./Article";
+import Loader from "./Loader";
 
 const Articles = () => {
     const [articles, setArticles] = useState([]);
@@ -19,7 +20,7 @@ const Articles = () => {
       }, []);
 
       if (isLoading) {
-        return <p>loading...</p>;
+        return <Loader/>
       }
       
     return (
