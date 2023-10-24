@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { fetchArticle } from "../../api";
 import { useParams } from "react-router-dom";
-import Article from "./Article";
+import Comments from "./Comments";
+import Loader from "./Loader";
 
 const ArticlePage = () => {
     const { article_id } = useParams()
@@ -11,7 +12,6 @@ const ArticlePage = () => {
     useEffect(()=> {
       fetchArticle(article_id)
       .then((fetchedArticle)=> {
-        console.log(fetchedArticle);
         setArticle(fetchedArticle)
         setIsLoading(false)
       }).catch((error) => {
@@ -21,7 +21,7 @@ const ArticlePage = () => {
   }, [article_id])
 
   if (isLoading) {
-    return <p>loading...</p>;
+    return <Loader />
   }
 
   const headerStyle = {
@@ -39,6 +39,7 @@ const ArticlePage = () => {
                 <h4>Created at: {article.created_at}</h4>
                 <p>{article.body}</p>
             </main>
+            <Comments article_id={article_id}/>
 
         
 
