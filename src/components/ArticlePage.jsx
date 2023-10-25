@@ -3,6 +3,7 @@ import { fetchArticle } from "../../api";
 import { useParams } from "react-router-dom";
 import Comments from "./Comments";
 import Loader from "./Loader";
+import Votes from "./Votes";
 
 const ArticlePage = () => {
     const { article_id } = useParams()
@@ -28,6 +29,8 @@ const ArticlePage = () => {
     backgroundImage: `url(${article.article_img_url})`,
   };
 
+  console.log(article);
+
     return (
        <>
         <div className="main-container">
@@ -35,8 +38,14 @@ const ArticlePage = () => {
             <h2 className = 'header-2'>{article.title}</h2>
             </section>
             <main className="single-article-main">
+              <section className="sub-header">
+                <div>
                 <h3>Author: {article.author}</h3>
                 <h4>Created at: {article.created_at}</h4>
+                </div>
+                <Votes article={article}/>
+              </section>
+              
                 <p>{article.body}</p>
             </main>
             <Comments article_id={article_id}/>
