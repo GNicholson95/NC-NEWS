@@ -1,7 +1,9 @@
 
 const Home = () => {
     return (
-        <h2 className = 'header-2'> Click one of the links to get started </h2>
+        <div className="home-container">
+        <h2> Welcome to NC NEWS </h2>
+        </div>
     )
 }
 

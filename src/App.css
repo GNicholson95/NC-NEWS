@@ -14,6 +14,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+p{
+  margin: 0;
+}
 
 .header {
   margin:0;
@@ -50,6 +53,26 @@ nav li:hover {
   text-decoration: underline;
 }
 
+.home-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: calc(100vh -  100.594px);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url(./Assets/nc-news-home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home-container h2{
+  display: flex;
+  align-items: center;
+  font-size: 4.5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px #ffffff;
+}
+
 .main-container{
   display: flex;
   justify-content: space-around;
@@ -58,29 +81,25 @@ nav li:hover {
   color: #000000;
 }
 
-.header-2 {
-  font-size: 2.5rem;
-  text-align: center;
-}
-
 .article{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 25%;
-  background-color: rgba(140, 140, 140, 0.661);
-  border-radius: 10px;
-  padding:1.5em 1em;
+  background-color: #333333;
+  border-radius: 5px;
+  padding:1em 1em;
   margin-bottom: 1.5em;
   min-width: 250px;
+  color: whitesmoke;
 }
 
 .article h3{
   margin: 0;
   margin-bottom: 1em;
-  color: #000000;
-  text-decoration: black;
+  color: whitesmoke;
+  text-decoration: whitesmoke;
 }
 a:-webkit-any-link {
   text-decoration: none;
@@ -113,6 +132,10 @@ a:-webkit-any-link {
   width: 100%;
   /* align-content: center; */
 }
+ .info p{
+  margin-bottom: 1em;
+  color: whitesmoke;
+ }
 
 .single-article-header {
   display: flex;
@@ -130,6 +153,11 @@ a:-webkit-any-link {
   text-shadow: 1px 1px 10px #000000;
 }
 
+.header-2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
 .single-article-header img {
   display: none;
 }
@@ -140,7 +168,19 @@ a:-webkit-any-link {
 }
 
 .votes-container{
+  display: flex;
+  height: fit-content;
   padding-right: 2em;
+  align-items: center;
+}
+
+.votes-container button{
+  height: fit-content;
+  padding: 1em;
+}
+
+.votes-container p{
+  margin: 0 1em;
 }
 
 

@@ -29,8 +29,6 @@ const ArticlePage = () => {
     backgroundImage: `url(${article.article_img_url})`,
   };
 
-  console.log(article);
-
     return (
        <>
         <div className="main-container">
