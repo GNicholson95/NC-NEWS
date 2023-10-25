@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import { fetchComments } from "../../api";
-import Comment from "./comment";
+import Comment from "./Comment";
 import Loader from "./Loader";
 
 const Comments= ({ article_id }) => {
     const [isLoading, setIsLoading] = useState(true)
-    const [comments, setComments] = useState({})
+    const [comments, setComments] = useState([])
 
     useEffect(()=> {
       fetchComments(article_id)
@@ -26,8 +26,6 @@ const Comments= ({ article_id }) => {
        <>
         <h2>Comments</h2>
        <div className="main-container">
-       
-        
         {comments.map((comment, index) => (
            <Comment key={index} comment={comment}/>
             ))}

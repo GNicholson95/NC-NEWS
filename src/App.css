@@ -134,10 +134,19 @@ a:-webkit-any-link {
   display: none;
 }
 
+.sub-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.votes-container{
+  padding-right: 2em;
+}
+
 
 .single-article-main{
   font-size: 1.2rem;
-  padding: 2em;
+  padding: 2.5em;
 }
 
 .single-article-main h4{
