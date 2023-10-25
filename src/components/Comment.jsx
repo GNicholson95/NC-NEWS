@@ -1,6 +1,5 @@
 
 const Comment = ( props ) => {
-    console.log('props!!!!!!',props);
     return (
       <div className="comment-container">
         <p>{props.comment.created_at}</p>

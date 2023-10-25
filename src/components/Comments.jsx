@@ -10,7 +10,6 @@ const Comments= ({ article_id }) => {
     useEffect(()=> {
       fetchComments(article_id)
         .then((fetchedComments)=> {
-        console.log(fetchedComments);
         setComments(fetchedComments)
         setIsLoading(false)
       }).catch((error) => {
