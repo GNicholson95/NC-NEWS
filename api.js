@@ -23,3 +23,15 @@ export const fetchArticle = (article_id) => {
         return comments;
       });
   };
+
+  export const patchVote = (article, value) => {
+    return axios
+    .patch(
+      `https://nc-news-s6au.onrender.com/api/articles/${article.article_id}`,{
+        inc_votes: value
+      })
+    .then(({data: {votes}}) => {
+      console.log(votes);
+       return votes;
+    });
+  };

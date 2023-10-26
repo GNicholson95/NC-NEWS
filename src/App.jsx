@@ -21,6 +21,7 @@ function App() {
       <Route path="/topics" element={<Topics />} />
       <Route path="/articles" element={<Articles />} />
       <Route path="/article/:article_id" element={<ArticlePage />} />
+      {/* <Route path="/*" element = {<p>Page not found</p>} /> error page  */}
       </Routes>
     </>
   )
