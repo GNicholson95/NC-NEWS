@@ -9,7 +9,7 @@ body {
   padding: 0;
   min-height: 100vh;
   color: rgb(0, 0, 0);
-  background-color: wh;
+  background-color: whitesmoke;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -79,6 +79,7 @@ nav li:hover {
   align-content: center;
   flex-wrap: wrap;
   color: #000000;
+  margin: 0;
 }
 
 .article{
@@ -165,6 +166,7 @@ a:-webkit-any-link {
 .sub-header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .votes-container{
@@ -175,8 +177,14 @@ a:-webkit-any-link {
 }
 
 .votes-container button{
-  height: fit-content;
+  width: 2rem;
+  height: 2rem;
   padding: 1em;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .votes-container p{
@@ -185,12 +193,31 @@ a:-webkit-any-link {
 
 
 .single-article-main{
+  margin:0 2em;
   font-size: 1.2rem;
   padding: 2.5em;
 }
 
 .single-article-main h4{
   color:#979797;
+}
+
+.add-comments{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.add-comments input{
+  padding: 1em 4em;
+  border-radius: 1000vw;
+}
+
+.add-comments button{
+  border-radius: 50%;
+  padding: 1em;
 }
 
 .comment-container{
