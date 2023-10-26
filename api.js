@@ -31,7 +31,15 @@ export const fetchArticle = (article_id) => {
         inc_votes: value
       })
     .then(({data: {votes}}) => {
-      console.log(votes);
        return votes;
     });
+  };
+
+
+  export const postComment = (article_id, userInput) => {
+    return axios
+      .post(`https://nc-news-s6au.onrender.com/api/articles/${article_id}/comments`, {
+        username: 'grumpy19',
+        body: userInput
+      })
   };

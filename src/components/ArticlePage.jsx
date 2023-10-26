@@ -43,13 +43,9 @@ const ArticlePage = () => {
                 </div>
                 <Votes article={article}/>
               </section>
-              
                 <p>{article.body}</p>
             </main>
-            <Comments article_id={article_id}/>
-
-        
-
+            <Comments article={article} article_id={article_id}/>
         </div>
        </>
         
