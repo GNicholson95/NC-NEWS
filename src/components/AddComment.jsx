@@ -11,7 +11,7 @@ const AddComment = ({ comments, setComments, article_id }) => {
     e.preventDefault();
 
     const optimisticComment = {
-      author: "grumpy", //user im using for the post
+      author: "grumpy19", //user im using for the post
       body: userInput,
       created_at: new Date().toISOString(),
       votes: 0, // assuming initial votes count
@@ -23,7 +23,7 @@ const AddComment = ({ comments, setComments, article_id }) => {
 
     postComment(article_id, userInput)
       .then((postedComment) => {
-        setComments((comments) => [postedComment, ...comments]);
+        // setComments((comments) => [postedComment, ...comments]);
         setSuccessfullPost(true);
         setError(''); // Clear any previous error
         setUserInput('')

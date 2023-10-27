@@ -45,3 +45,20 @@ export const fetchArticle = (article_id) => {
          return response.data
       });
   };
+
+  export const fetchAllTopics = () => {
+    return axios
+      .get(`https://nc-news-s6au.onrender.com/api/topics`)
+      .then((response) => {
+        return response.data.topics;
+      });
+    }
+
+    
+    export const fetchArticlesByTopic = () => {
+      return axios
+        .get(`https://nc-news-s6au.onrender.com/api/articles`)
+        .then((response) => {
+          return response.data.articles;
+        });
+      };

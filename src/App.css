@@ -274,6 +274,41 @@ a:-webkit-any-link {
   padding: 1em 2em;
 }
 
+.topics-header{  
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: underline;
+  background-color: #333333;
+  color:rgb(204, 255, 0);
+  margin: 0;
+  padding: 1.5em 0;
+}
+
+.topics_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.topic-link{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1em; 
+  text-transform: capitalize;
+  border-bottom: 2px solid black;
+  color: #333333;
+  
+}
+
+.topic-link:hover{
+  color: #7f7f7f;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
 /* loader */
 
 .loader{
