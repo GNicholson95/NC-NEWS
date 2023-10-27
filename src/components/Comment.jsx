@@ -6,7 +6,7 @@ const Comment = ( props ) => {
      <h4>{props.comment.author}</h4>
      <div className="comment-info">
      <p>{props.comment.body}</p>
-     <p>Votes: {props.comment.votes}</p>
+     <p className="votes">Votes: {props.comment.votes}</p>
      </div>
    </div>
     );

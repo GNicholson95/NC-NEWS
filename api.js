@@ -41,5 +41,7 @@ export const fetchArticle = (article_id) => {
       .post(`https://nc-news-s6au.onrender.com/api/articles/${article_id}/comments`, {
         username: 'grumpy19',
         body: userInput
-      })
+      }) .then((response) => {
+         return response.data
+      });
   };
