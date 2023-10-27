@@ -8,7 +8,7 @@ const Articles = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoading(true); //important! it makes the code wait for the items to load
+    setIsLoading(true);
     fetchAllArticles()
       .then((articles) => {
         setIsLoading(false);

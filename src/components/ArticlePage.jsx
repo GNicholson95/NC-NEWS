@@ -29,17 +29,20 @@ const ArticlePage = () => {
     backgroundImage: `url(${article.article_img_url})`,
   };
 
+  const createdAt = new Date(article.created_at);
+  const formattedDate = createdAt.toLocaleString();
+
     return (
        <>
         <div className="main-container">
         <section className="single-article-header"  style={headerStyle}>
-            <h2 className = 'header-2'>{article.title}</h2>
+            <h2 className = 'article-header-2'>{article.title}</h2>
             </section>
             <main className="single-article-main">
               <section className="sub-header">
                 <div>
                 <h3>Author: {article.author}</h3>
-                <h4>Created at: {article.created_at}</h4>
+                <h4>Created: {formattedDate}</h4>
                 </div>
                 <Votes article={article}/>
               </section>

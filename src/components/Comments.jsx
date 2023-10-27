@@ -26,8 +26,8 @@ const Comments = ({ article_id }) => {
 
   return (
     <>
+      <div className="main-comment-container">
       <h2>Comments</h2>
-      <div className="main-container">
         <AddComment
           comments={comments}
           setComments={setComments}
