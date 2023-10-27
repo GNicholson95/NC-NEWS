@@ -303,7 +303,7 @@ a:-webkit-any-link {
 }
 
 .topic-link:hover{
-  color: #7f7f7f;
+  color: #656565;
   transform: scale(1.2);
   cursor: pointer;
 }
