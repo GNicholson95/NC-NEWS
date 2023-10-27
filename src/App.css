@@ -3,14 +3,11 @@ html {
   background-color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
-  min-height: 100vh;
-  min-width: 100vw;
 }
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  min-width: 100vw;
   color: rgb(0, 0, 0);
   background-color: whitesmoke;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -68,14 +65,13 @@ nav li:hover {
 
 /* header section */
 
-/* home-page */
+/* home page */
 
 .home-container{
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 100vw;
-  height: calc(100vh -  100.594px);
+  height: calc(100vh -  102px);
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url(./Assets/nc-news-home.jpg);
   background-size: cover;
@@ -90,23 +86,18 @@ nav li:hover {
   text-shadow: 1px 1px 10px #ffffff;
 }
 
-/* home-page */
+/* home page */
 
+ /* all articles page */
 
-
-.main-comment-container{
+ .main-container{
   display: flex;
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
   width: 100vw;
-  color: #fefefe;
-  background-color: #333333;
+  color: #000000;
   margin: 0;
-}
-
-.main-comment-container h2{
-  font-size: 2.5rem;
 }
 
 .article{
@@ -165,6 +156,10 @@ a:-webkit-any-link {
   color: whitesmoke;
  }
 
+ /* all articles page */
+
+  /* single article page */
+
 .single-article-header {
   display: flex;
   flex-wrap: wrap;
@@ -206,6 +201,20 @@ a:-webkit-any-link {
   align-items: center;
 }
 
+.single-article-main{
+  font-size: 1.2rem;
+  padding: 2.5em 4.5em 5em 4.5em;
+ 
+}
+
+.single-article-main h4{
+  color:#777777;
+}
+
+ /* single article page */
+
+/* votes section */
+
 .votes-container{
   display: flex;
   height: fit-content;
@@ -239,17 +248,24 @@ a:-webkit-any-link {
   color: rgb(204, 255, 0);
 }
 
+/* votes section */
 
-.single-article-main{
-  font-size: 1.2rem;
-  padding: 2.5em 4.5em 5em 4.5em;
-  background-color: whitesmoke;
-}
+/* comments section */
 
-
-.single-article-main h4{
-  color:#979797;
-}
+  .main-comment-container{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    color: #fefefe;
+    background-color: #333333;
+    margin: 0;
+  }
+  
+  .main-comment-container h2{
+    font-size: 2.5rem;
+  }
 
 .add-comments{
   display: flex;
@@ -269,8 +285,6 @@ a:-webkit-any-link {
   border-radius: 50%;
   padding: 1em;
 }
-
-
 
 .add-comments button:hover{
   transform: scale(1.02);
@@ -312,6 +326,10 @@ a:-webkit-any-link {
   padding: 1em 2em;
 }
 
+ /* comments section */
+
+  /* topics page */
+
 .topics-header{
   font-size: 3rem;
   text-align: center;
@@ -349,6 +367,8 @@ a:-webkit-any-link {
   border-top: 1px solid whitesmoke;
 }
 
+/* topics page */
+
 
 /* loader */
 
@@ -368,9 +388,14 @@ a:-webkit-any-link {
   transform: translate(-50%, -50%);
 }
 
+/* loader */
+
+/* responsive area */
 
 @media screen and (max-width: 768px) {
   .article{
     width: 40%;
   }
 }
+
+/* responsive area */
