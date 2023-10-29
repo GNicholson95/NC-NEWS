@@ -34,7 +34,7 @@ const Articles = () => {
   if (isLoading) {
     return <Loader />;
   }
-
+  console.log(articles);
   return (
     <>
       <h2 className="header-2">Articles</h2>
