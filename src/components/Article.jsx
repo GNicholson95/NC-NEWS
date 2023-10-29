@@ -11,6 +11,7 @@ const Article = ( props ) => {
      <p>Topic: {props.article.topic}</p>
      <p>Author: {props.article.author}</p>
      <p>💬: {props.article.comment_count}</p>
+     <p>votes: {props.article.votes}</p>
      </div>
    </div>
     );
