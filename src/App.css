@@ -185,9 +185,10 @@ a:-webkit-any-link {
   font-size: 3rem;
   text-align: center;
   text-decoration: underline;
+  text-transform: capitalize;
   background-color: #1a1a1a;
   color:rgb(204, 255, 0);
-  margin: 0 0 1em 0;
+  margin: 0;
   padding: 0.8em 0;
 }
 
@@ -369,6 +370,24 @@ a:-webkit-any-link {
 
 /* topics page */
 
+/* sort */
+
+.sort-container{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin: 2em;
+}
+
+.sort-container select{
+  font-size: 1.2rem;
+  padding: 0.2em;
+  
+}
+
+
+/* sort */
+
 
 /* loader */
 
@@ -388,7 +407,7 @@ a:-webkit-any-link {
   transform: translate(-50%, -50%);
 }
 
-/* loader */
+/* loader *
 
 /* responsive area */
 
