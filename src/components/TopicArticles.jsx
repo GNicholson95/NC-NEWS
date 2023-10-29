@@ -31,8 +31,10 @@ const TopicArticles = () => {
     const sortedArticles = [...articles];
     if (sortingValue === 'Most recent') {
       sortedArticles.sort((a, b) => b.created_at - a.created_a); 
-    } else if (sortingValue === 'Most popular') {
+    } else if (sortingValue === 'Most comments') {
       sortedArticles.sort((a, b) => b.comment_count - a.comment_count); 
+    }else if (sortingValue === 'Most votes') {
+      sortedArticles.sort((a, b) => b.votes - a.votes); 
     }
     return sortedArticles;
   };
