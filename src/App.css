@@ -61,6 +61,8 @@ nav li:hover {
   border-radius: 50%;
   color: #000000;
   margin-left: 1em;
+  min-width: 1em; /* Adjust the minimum width as needed */
+  min-height: 1em;
 }
 
 /* header section */
@@ -74,6 +76,7 @@ nav li:hover {
   height: calc(100vh -  102px);
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url(./Assets/nc-news-home.jpg);
+  /* url(./Assets/NC-NEWS@.jpg); */
   background-size: cover;
   background-position: center;
 }
@@ -105,7 +108,7 @@ nav li:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 25%;
+  width: 20%;
   background-color: #333333;
   border-radius: 5px;
   padding:1em 1em;
@@ -182,14 +185,14 @@ a:-webkit-any-link {
 }
 
 .header-2{  
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-align: center;
   text-decoration: underline;
   text-transform: capitalize;
   background-color: #1a1a1a;
   color:rgb(204, 255, 0);
   margin: 0;
-  padding: 0.8em 0;
+  padding: 0.6em 0;
 }
 
 .single-article-header img {
