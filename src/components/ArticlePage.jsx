@@ -42,7 +42,7 @@ const ArticlePage = () => {
               <section className="sub-header">
                 <div>
                 <h3>Author: {article.author}</h3>
-                <h4>Created: {formattedDate}</h4>
+                <h4>Posted: {formattedDate}</h4>
                 </div>
                 <Votes article={article}/>
               </section>
