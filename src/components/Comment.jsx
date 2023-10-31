@@ -1,6 +1,5 @@
 
 const Comment = ( props ) => {
-  console.log(props.comment.created_at);
   const createdAt = new Date(props.comment.created_at);
   const formattedDate = createdAt.toLocaleString();
     return (
